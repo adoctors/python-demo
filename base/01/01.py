@@ -130,17 +130,17 @@
 #       needs_go_on = True
 # print('你破产了, 游戏结束!')
 
-pre = 1
-nex = 1
-mid = 1
+# pre = 1
+# nex = 1
+# mid = 1
 
-leng = 1
+# leng = 1
 
-while leng < 21:
-  print(mid)
-  mid = pre+nex
-  # print(mid)
-  pre=nex
-  nex=mid
-  leng+=1
+# while leng < 21:
+#   print(mid)
+#   mid = pre+nex
+#   # print(mid)
+#   pre=nex
+#   nex=mid
+#   leng+=1
 
