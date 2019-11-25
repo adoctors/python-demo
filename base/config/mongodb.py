@@ -11,6 +11,10 @@ coll_jz = db.jz
 coll_ly = db.ly
 
 
+# rcr
+coll_req_list = db.req_list
+
+
 # company = [
 #   {
 #     name:'三盟',
