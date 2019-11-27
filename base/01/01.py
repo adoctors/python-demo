@@ -82,6 +82,7 @@
 # counter = 0
 # # 没有做空值处理所以回报错
 # # 因为用的是while所以输错了会让重新输入
+# 因为此处是一个死循环，在循环内条件结束循环
 # while True:
 #     counter += 1
 #     number = int(input('请输入: '))
@@ -136,7 +137,7 @@
 # nex = 1
 # mid = 1
 
-# leng = 1
+leng = 1
 
 # while leng < 21:
 #   print(mid)
@@ -146,3 +147,15 @@
 #   nex=mid
 #   leng+=1
 
+
+while True:
+  print('start: %d' % leng)
+  leng+=1
+  if leng == 3:
+    # 此时直接跳过下面的内容直接进入下一个循环
+    continue
+  print('end: %d' % leng)
+
+  if leng == 5:
+    print('---')
+    break
