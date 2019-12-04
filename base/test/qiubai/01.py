@@ -39,4 +39,3 @@ for i in range(1,11):
 
   print('第%d个页面，耗时：%d' % (i,float(time.time()) - start_time))
 
-
