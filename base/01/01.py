@@ -137,7 +137,7 @@
 # nex = 1
 # mid = 1
 
-leng = 1
+# leng = 1
 
 # while leng < 21:
 #   print(mid)
@@ -148,14 +148,78 @@ leng = 1
 #   leng+=1
 
 
-while True:
-  print('start: %d' % leng)
-  leng+=1
-  if leng == 3:
-    # 此时直接跳过下面的内容直接进入下一个循环
-    continue
-  print('end: %d' % leng)
+# while True:
+#   print('start: %d' % leng)
+#   leng+=1
+#   if leng == 3:
+#     # 此时直接跳过下面的内容直接进入下一个循环
+#     continue
+#   print('end: %d' % leng)
 
-  if leng == 5:
-    print('---')
-    break
+#   if leng == 5:
+#     print('---')
+#     break
+
+
+# f = [x for x in range(1, 10)]
+# print(f)    # [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# f = [x + y for x in 'ABCDE' for y in '1234567']
+# print(f)
+# ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'B1', 'B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'D1', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'E1', 'E2', 'E3', 'E4', 'E5', 'E6', 'E7']
+
+
+# def fib(n):
+#     a, b = 0, 1
+#     for _ in range(n):
+#         a, b = b, a + b
+#         yield a
+
+
+# # print(fib(20))  <generator object fib at 0x0000020996F2EE58>
+
+# def main():
+#     # for val in fib(20):
+#         # print(val)
+
+
+# if __name__ == '__main__':
+#     main()
+
+
+# -------------------------------
+
+class Student(object):
+
+    # __init__是一个特殊方法用于在创建对象时进行初始化操作
+    # 通过这个方法我们可以为学生对象绑定name和age两个属性
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def study(self, course_name):
+        print('%s正在学习%s.' % (self.name, course_name))
+
+    # PEP 8要求标识符的名字用全小写多个单词用下划线连接
+    # 但是部分程序员和公司更倾向于使用驼峰命名法(驼峰标识)
+    def watch_movie(self):
+        if self.age < 18:
+            print('%s只能观看《熊出没》.' % self.name)
+        else:
+            print('%s正在观看岛国爱情大电影.' % self.name)
+
+def main():
+    # 创建学生对象并指定姓名和年龄
+    stu1 = Student('adoctors', 28)
+    # 给对象发study消息
+    stu1.study('Python程序设计')
+    # 给对象发watch_av消息
+    stu1.watch_movie()
+    stu2 = Student('王大锤', 15)
+    stu2.study('思想品德')
+    stu2.watch_movie()
+
+
+# if __name__ == '__main__':
+#     main()
+
+# ----------------------------------------
