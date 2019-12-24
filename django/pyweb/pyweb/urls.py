@@ -20,4 +20,7 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),
+    path('user/info', views.userInfo),
+    path('user/<year>/<int:month>', views.test, name="blogs_with_date"),
+    path('user/post_test', views.postTest),
 ]
